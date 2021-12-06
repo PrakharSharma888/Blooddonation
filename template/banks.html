@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>State</th>
+    <th>District</th>
+    <th>City</th>
+    <th>Mobile no.</th>
+    <th>Category</th>
+  </tr>
+    {% for i in bank %}
+  <tr>
+    <td>{{i.name}}</td>
+    <td>{{i.state}}</td>
+    <td>{{i.district}}</td>
+    <td>{{i.city}}</td>
+    <td>{{i.mobile}}</td>
+    <td>{{i.category}}</td>
+  </tr>
+    {% endfor %}
+
+</table>
+
+
+
+{% endblock  %}

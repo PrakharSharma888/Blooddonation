@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Search -->
+    <div style="margin:auto;" class="search">
+      <img src="{% static 'photos/logo/logo.png' %}" class="rounded-circle" alt="Logo" width="300" height="300">
+      <form action="{% url 'donorlistsite' %}" method="POST">
+          {% csrf_token %}
+          <div style="margin-left:50px;" class="input-group mb-3">
+            {{forms_search.select_blood_group}}
+            {{forms_search.select_location}}
+          </div>
+        <button style="margin-left:250px;" type="submit" class="btn search_bt">Search</button>
+
+      </form>
+    </div>
+
+
+   {% endblock  %}

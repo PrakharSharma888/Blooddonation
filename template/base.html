@@ -12,32 +12,39 @@
   <script src="{% static 'js/jquery-3.3.1.slim.min.js' %}"></script>
   <script src="{% static 'js/popper-1.14.7.js' %}"></script>
   <script src="{% static 'js/bootstrap.min.js' %}%"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="{% static 'imge/logo/blogo.jpg' %}">
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'photos/logo/logofinal.png' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet">
 
-  <title>BAUET Blood Bank Management System</title>
+  <title>Blood Donation WebApp</title>
 </head>
 
 <body>
+
   <div class="container-fluid">
     <!-- head title -->
-    <h5 class="head text-white text-center p-3">BAUET Blood Bank Management System</h5>
+    <h5 style="font-family: 'Balthazar', serif;" class="head text-white text-center p-3"> Blood Donation WebApp</h5>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-sm sticky-top">
+    <nav style="margin-bottom:8px;" class="navbar navbar-expand-sm sticky-top">
 
       <!-- logo -->
       <a class="navbar-brand ml-5" href="#">
-        <img src="{% static 'imge/logo/blogo.jpg' %}" alt="logo" style="width:60px;">
+        <img src="{% static 'photos/logo/logofinal.png' %}" alt="logo" style="width:130px;">
       </a>
 
       <!-- navbar item -->
-      <div class="col">
-        <ul class="navbar-nav flex-row-reverse">
+      <div style="margin:5px;" class="col">
+        <ul style="color:#808080;" class="navbar-nav flex-row-reverse">
           <li class="nav-item text-dark">
             <a class="nav-link font-weight-bolder" href="{% url 'aboutsite1' %}">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link font-weight-bolder" href="{% url 'contactsite1' %}">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bolder" href='/banks'>Blood Banks</a>
           </li>
           <!-- Dropdown -->
           <li class="nav-item dropdown">
@@ -71,20 +78,12 @@
 
   <!-- footer -->
   <div class="footer clearfix">
-    <p class="text-center text-white p-2">
-      Bangladesh Army University of Engineering & Technology<br>
-      Qadirabad Cantonment, Natore<br>
-      Phone: +880 1708503510, 01708503504, 01708503514<br>
-      Email: info@bauet.ac.bd, registrar@bauet.ac.bd<br>
-
-    </p>
-
+    <p class="text-center text-black p-2">
+      Health & Blood&trade;
+                <br> All Rights Reserved&reg; Copyright @2021
+                <br>
+   </p>
   </div>
-
-
-
-
-
   </div>
 </body>
 

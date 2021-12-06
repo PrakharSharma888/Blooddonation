@@ -1,11 +1,16 @@
+
+
+
 /* index */
 .head {
-  background-color: #FF0000;
+  background-color: #cf1b1b;
   height: 60px;
+  font-family: unset;
+  text-transform: uppercase;
 }
 
 .navbar {
-  background: white;
+  background-color: #E5E4E2;
   height: 96px;
 }
 
@@ -82,7 +87,7 @@
 }
 
 .post_dec h2, .post_dec2 h2, .post_dec3 h2 {
-  color: #FF0000;
+  color: #3333cc;
 }
 
 .post_dec, .post_dec3 {
@@ -113,7 +118,7 @@
 }
 
 .footer {
-  background-color: #FF0000;
+  background-color: #A13333;
   height: 120px;
   margin-top: 88px;
 }
@@ -124,7 +129,7 @@
 }
 
 #page-header {
-  background: url(../imge/a.jpg);
+  background: url(../photos/bg2.png);
   background-size: cover;
   height: 300px;
   padding-top: 50px;
@@ -133,7 +138,7 @@
 }
 
 #page-header_1 {
-  background: url(../imge/a.jpg);
+  background: url(../photos/bg1.png);
   background-size: cover;
   height: 300px;
   padding-top: 50px;
@@ -144,7 +149,11 @@
 /* Registration */
 .form_body {
   width: 750px;
-  margin-left: 296px;
+  margin-left: 316px;
+  border: 3px solid black;
+  padding: 50px;
+  background-color:#E5D7DD;
+
 }
 
 .blood_group {
@@ -156,7 +165,7 @@
 }
 
 .reg_btn {
-  background-color: #FF0000;
+  background-color: #3333ff;
   color: white;
 }
 
@@ -172,7 +181,7 @@
 }
 
 .search_bt {
-  background-color: #FF0000;
+  background-color: #3333ff;
   color: white;
   margin-left: 215px;
 }
@@ -186,7 +195,7 @@
 }
 
 .theadcolor {
-  background-color: #FF0000;
+  background-color: #3333ff;
 }
 
 .donor_list {

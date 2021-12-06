@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import HomePageSlider, HomePageBody
+from .models import HomePageSlider, HomePageBody, BloodBanks
 
 
 
@@ -18,6 +18,10 @@ def homedisplay(request):
         'user_opinion' : user_opinion,
     }
 
-    return render(request, 'donor_home.html', context)
+    return render(request, 'home.html', context)
 
 
+def banks(request):
+    bank = BloodBanks.objects.all()
+    print(bank)
+    return render(request, 'banks.html', {'bank': bank})

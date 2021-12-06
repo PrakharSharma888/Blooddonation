@@ -16,7 +16,7 @@ def searchdisplay(request):
             context = {
                 'donor_filter' : donor_filter
             }
-            return render(request, 'donor_list.html', context)
+            return render(request, 'list.html', context)
 
 
 
@@ -24,7 +24,7 @@ def searchdisplay(request):
         'forms_search' : search_forms,
         'logo_img' : logo_img
     }
-    return render(request, 'donor_search.html' ,context)
+    return render(request, 'search.html' ,context)
 
 
 
@@ -36,4 +36,4 @@ def donorlistdetail(request, email):
     context = {
         'details' : detail
     }
-    return render(request, 'donor_l_d.html', context)
+    return render(request, 'information.html', context)

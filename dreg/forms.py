@@ -23,7 +23,7 @@ class DonorRegistration(ModelForm):
             'cardiac' : forms.Select(attrs={'class':'form-control', 'required':'True'}),
             'bleeding_disorders' : forms.Select(attrs={'class':'form-control', 'required':'True'}),
             'hbsAg_hcv_hIV' : forms.Select(attrs={'class':'form-control', 'required':'True'}),
-            
+
         }
         
 

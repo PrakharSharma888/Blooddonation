@@ -14,24 +14,27 @@
     <script src="{% static 'js/jquery-3.3.1.slim.min.js' %}"></script>
     <script src="{% static 'js/popper-1.14.7.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'imge/logo/blogo.jpg' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'photos/logo/logofinal.png' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet">
 
-    <title>BAUET Blood Bank Management System</title>
+    <title>Blood Donation WebApp</title>
 </head>
 
 <body>
     <div class="container-fluid">
         <!-- head title -->
         <header>
-            <h5 class="head text-white text-center p-3">BAUET Blood Bank Management System</h5>
+            <h5 style="font-family: 'Balthazar', serif;" class="head text-white text-center p-3"> Blood Donation WebApp</h5>
         </header>
 
         <!-- navbar -->
-        <nav class="navbar navbar-expand-sm sticky-top">
+        <nav style="margin-bottom:8px;" class="navbar navbar-expand-sm sticky-top">
 
             <!-- logo -->
             <a class="navbar-brand ml-5" href="#">
-                <img src="{% static 'imge/logo/blogo.jpg' %}" alt="logo" style="width:60px;">
+                <img src="{% static 'photos/logo/logofinal.png' %}" alt="logo" style="width:130px;">
             </a>
 
             <!-- navbar item -->
@@ -43,6 +46,9 @@
                     <li class="nav-item">
                         <a class="nav-link font-weight-bolder" href="{% url 'contactsite1' %}">Contact Us</a>
                     </li>
+                    <li class="nav-item">
+            <a class="nav-link font-weight-bolder" href='/banks'>Blood Banks</a>
+          </li>
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link font-weight-bolder" href="#" data-toggle="dropdown">
@@ -77,25 +83,25 @@
                 </ul>
                 <div class="carousel-inner">
                     <div class="carousel-item carousel-img-1 active">
-                         <img src="{{ home_slider.slider_1.url }}" alt="Slid Image">
+                         <img src="{% static 'photos/bg1.jpg' %}" alt="Slid Image">
                         <div class="carousel-caption">
-                            <h3>Just Donate Blood</h3>
-                            <p>Do yout know just a point of blood can save up to 3 lives?</p>
+                            <h3>Why do we donate blood?</h3>
+                            <p>Donating just one pint of blood can save more than one person's life.</p>
                         </div>
                     </div>
                     <!-- carousel item -->
                     <div class="carousel-item carousel-img-2">
-                        <img src="{{ home_slider.slider_2.url }}" alt="Slid Image">
+                        <img src="{% static 'photos/bg2.jpg' %}" alt="Slid Image">
                         <div class="carousel-caption">
-                            <h3>Just Donate Blood</h3>
-                            <p>Donating blood is safe.</p>
+                            <h3>Why do we donate blood?</h3>
+                            <p>Whenever you donate blood, you’re giving someone the opportunity to have a new lease on life, not to mention that you’re also giving your overall health a great boost.</p>
                         </div>
                     </div>
                     <div class="carousel-item carousel-img-3">
-                        <img src="{{ home_slider.slider_3.url }}" alt="Slid Image">
+                        <img src="{% static 'photos/bg3.jpg' %}" alt="Slid Image">
                         <div class="carousel-caption">
-                            <h3>Just Donate Blood</h3>
-                            <p>Donating blood is simple,painless and noble</p>
+                            <h3>Why do we donate blood?</h3>
+                            <p>It is not more painful than losing a loved one that you may save by donating!</p>
                         </div>
                     </div>
                 </div>
@@ -116,11 +122,9 @@
 
         <!-- footer -->
         <div class="footer clearfix">
-            <p class="text-center text-white p-2">
-                Bangladesh Army University of Engineering & Technology
-                <br> Qadirabad Cantonment, Natore
-                <br> Phone: +880 1708503510, 01708503504, 01708503514
-                <br> Email: info@bauet.ac.bd, registrar@bauet.ac.bd
+    <p class="text-center text-black p-2">
+      Health & Blood&trade;
+                <br> All Rights Reserved&reg; Copyright @2021
                 <br>
 
             </p>
