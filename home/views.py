@@ -23,5 +23,4 @@ def homedisplay(request):
 
 def banks(request):
     bank = BloodBanks.objects.all()
-    print(bank)
     return render(request, 'banks.html', {'bank': bank})

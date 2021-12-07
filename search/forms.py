@@ -26,7 +26,7 @@ class DonorSearch(forms.Form):
         widget=forms.TextInput(
             attrs={'class':'form-control',
             'required':'True', 
-            'placeholder':'Address?..e.g..binalbagan'
+            'placeholder':'Address? Ghaziabad'
             }
         ),
     )

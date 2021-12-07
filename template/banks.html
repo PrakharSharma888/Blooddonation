@@ -3,8 +3,20 @@
 
 {% block content %}
 
-<table>
-  <tr>
+<table style="text-align:center;
+  border-collapse: collapse;
+  width:100%;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);" class="content-table">
+  <thead>
+  <tr style="background-color: #009879;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;">
     <th>Name</th>
     <th>State</th>
     <th>District</th>
@@ -12,15 +24,18 @@
     <th>Mobile no.</th>
     <th>Category</th>
   </tr>
+  </thead>
+  <tbody>
     {% for i in bank %}
-  <tr>
-    <td>{{i.name}}</td>
+  <tr style="border: 0.5px solid black;">
+    <td style="padding: 12px 15px;">{{i.name}}</td>
     <td>{{i.state}}</td>
     <td>{{i.district}}</td>
     <td>{{i.city}}</td>
     <td>{{i.mobile}}</td>
     <td>{{i.category}}</td>
   </tr>
+    </tbody>
     {% endfor %}
 
 </table>
